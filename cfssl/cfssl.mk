@@ -2,12 +2,12 @@ SHELL := /bin/bash
 
 CFSSL_VERSION := R1.2
 
-CA_NAME := myapp
-O := myapp.local
-COUNTRY := US
-CITY := San Francisco
-OU := mycompany
-STATE := CA
+CA_NAME ?= myapp
+O ?= myapp.local
+COUNTRY ?= US
+CITY ?= San Francisco
+OU ?= mycompany
+STATE ?= CA
 
 CA_PEM ?= ca.pem
 CA_KEY ?= ca-key.pem
